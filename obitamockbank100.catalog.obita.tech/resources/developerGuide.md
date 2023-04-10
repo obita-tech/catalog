@@ -70,7 +70,7 @@ This is the component to handle the database configurations.
 
 ### Frontend Setup
 
-The frontend is developed using React.js and has two main components; account management, transaction management, and beneficiary management. Following is the set of tasks to run the frontend application:
+The front end is developed using React.js and has two main components; account management, transaction management, and beneficiary management. Following is the set of tasks to run the frontend application:
 
 - Clone the repository from GitHub
 
@@ -98,82 +98,60 @@ npm start
 
 #### Main components of the frontend
 
-##### App :
+##### Account Management :
 
-This is the component where all the REST APIs are declared. All the requests and responses are handled here.
+This is the component where all the account-related tasks are gathered. Users can check their account details with recent transactions. Users can create new accounts and also can update their account balance.
 
-##### Controller :
+##### Transaction Management :
 
-This is the component to handle the business logic of all the REST APIs exposed through the App. All the database interactions go here.
+This is the component to handle all the transaction-related tasks. Users can make transactions and view the transaction history.
 
-##### DB Process :
+##### Beneficiary Management :
 
-This is the component to handle the database configurations.
+This is the component to handle all the beneficiaries related tasks. Users can add and delete their beneficiaries, and use them in transactions.
 
 ### API Documentation
 
-The API documentation provides a comprehensive reference for our Open Banking APIs. The documentation includes the following: - API Reference - Authentication and Authorization - Data Formats - Error Handling
+The API documentation provides a comprehensive reference for the Mock Banking APIs. The documentation includes the following: - API Reference - Authentication and Authorization - Data Formats - Error Handling
 
 ### Swagger UI [Link]
 
-Our Open Banking solution provides a Swagger UI to explore and interact with the APIs. The Swagger UI allows you to:
+The Mock Banking solution provides a Swagger UI to explore and interact with the APIs. The Swagger UI allows you to:
 
     - View API endpoints and parameters
     - Try out API requests and see responses
     - Generate client code in multiple programming languages
 
-### Development
-
-#### Extend GW
-
-#### Extend IAM
-
-#### Extend OCM
-
-#### Extend DCR Interface
-
-#### Extend BI
-
 ### Error Handling
 
-Our Open Banking solution provides comprehensive error handling to help developers diagnose and resolve issues. The error handling includes the following:
+The Mock Banking solution provides comprehensive error handling to help developers diagnose and resolve issues. The error handling includes the following:
 
-Error Codes |Error Messages
+Error Codes | Error Messages |
 Troubleshooting Guide
 
 ### Security
 
-Security is a critical aspect of Open Banking solutions. Our solution provides the following security features:
+Security is a critical aspect of Mock Banking solutions. Our solution provides the following security features:
 
-Strong Customer Authentication (SCA)
-Client Authentication
-OAuth2 Authorization Framework
+Strong Customer Authentication (SCA) |
+Client Authentication |
+OAuth2 Authorization Framework |
 TLS Encryption
 
 ### Performance
 
-Our Open Banking solution is designed to perform under high loads. We use the following techniques to optimize performance:
+The Mock Banking solution is designed to perform under high loads. We use the following techniques to optimize performance:
 
-Caching
-Asynchronous Processing
+Caching |
+Asynchronous Processing |
 Distributed Architecture
 
 ### Integration
 
-Our Open Banking solution is designed to integrate with third-party systems. We provide the following integration features:
+The Mock Banking solution is designed to integrate with third-party systems. We provide the following integration features:
 
 API Management
-Integration Adapters
-Webhooks
-
-### Analytics
-
-Our Open Banking solution provides comprehensive analytics to help banks understand how their customers are using the system. The analytics include the following:
-
-Usage Metrics
-Transaction Analytics
-Business Intelligence
 
 ### Support
 
-If you encounter issues or have questions while working with our Open Banking solution, please contact our support team at `support@obita.tech`.
+If you encounter issues or have questions while working with the Mock Banking solution, please contact our support team at `support@obita.tech`.
