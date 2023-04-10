@@ -1,6 +1,6 @@
 # Introduction
 
-The Mock Banking solution is providing an online banking system environment for the customer to try out all the self-banking-related tasks. This is a sandbox environment to provide a well-managed banking system to get understand all the solutions that we provide by our Open Banking solution.
+The Sandbox Banking solution is providing an online banking system environment for the customer to try out all the self-banking-related tasks. This is a sandbox environment to provide a well-managed banking system to get understand all the solutions that we provide by our Open Banking solution.
 
 # Ecosystem & participants
 
@@ -12,8 +12,8 @@ Transactions management allows users to make transactions and view transaction h
 
 Beneficiary management allows users to add and delete their account beneficiaries. Users then can mention added beneficiaries while doing a transaction.
 
-All the users who are willing to try out our Open Banking solutions can participate in the Mock Banking system.
+All the users who are willing to try out our Open Banking solutions can participate in the Sandbox Banking system.
 
 # User Journey
 
-![user journey](userJourney.png)
+![user journey](./userJourney.png)

@@ -1,4 +1,4 @@
-# Developer Guide: Obita Mock Banking
+# Developer Guide: Obita Sandbox Banking
 
 ## Introduction
 
@@ -6,9 +6,9 @@ This developer guide is designed to help developers understand and work with the
 
 ## Solution Architecture
 
-![solution architectur](solutionArchitecture.png)
+![solution architectur](./solutionArchitecture.png)
 
-The Mock Banking solution is built using the microservices architecture. The system comprises several independent services that communicate with each other using RESTful APIs.
+The Sandbox Banking solution is built using the microservices architecture. The system comprises several independent services that communicate with each other using RESTful APIs.
 
 ## Getting Started
 
@@ -112,11 +112,11 @@ This is the component to handle all the beneficiaries related tasks. Users can a
 
 ### API Documentation
 
-The API documentation provides a comprehensive reference for the Mock Banking APIs. The documentation includes the following: - API Reference - Authentication and Authorization - Data Formats - Error Handling
+The API documentation provides a comprehensive reference for the Sandbox Banking APIs. The documentation includes the following: - API Reference - Authentication and Authorization - Data Formats - Error Handling
 
 ### Swagger UI [Link]
 
-The Mock Banking solution provides a Swagger UI to explore and interact with the APIs. The Swagger UI allows you to:
+The Sandbox Banking solution provides a Swagger UI to explore and interact with the APIs. The Swagger UI allows you to:
 
     - View API endpoints and parameters
     - Try out API requests and see responses
@@ -124,14 +124,14 @@ The Mock Banking solution provides a Swagger UI to explore and interact with the
 
 ### Error Handling
 
-The Mock Banking solution provides comprehensive error handling to help developers diagnose and resolve issues. The error handling includes the following:
+The Sandbox Banking solution provides comprehensive error handling to help developers diagnose and resolve issues. The error handling includes the following:
 
 Error Codes | Error Messages |
 Troubleshooting Guide
 
 ### Security
 
-Security is a critical aspect of Mock Banking solutions. Our solution provides the following security features:
+Security is a critical aspect of Sandbox Banking solutions. Our solution provides the following security features:
 
 Strong Customer Authentication (SCA) |
 Client Authentication |
@@ -140,7 +140,7 @@ TLS Encryption
 
 ### Performance
 
-The Mock Banking solution is designed to perform under high loads. We use the following techniques to optimize performance:
+The Sandbox Banking solution is designed to perform under high loads. We use the following techniques to optimize performance:
 
 Caching |
 Asynchronous Processing |
@@ -148,10 +148,10 @@ Distributed Architecture
 
 ### Integration
 
-The Mock Banking solution is designed to integrate with third-party systems. We provide the following integration features:
+The Sandbox Banking solution is designed to integrate with third-party systems. We provide the following integration features:
 
 API Management
 
 ### Support
 
-If you encounter issues or have questions while working with the Mock Banking solution, please contact our support team at `support@obita.tech`.
+If you encounter issues or have questions while working with the Sandbox Banking solution, please contact our support team at `support@obita.tech`.
