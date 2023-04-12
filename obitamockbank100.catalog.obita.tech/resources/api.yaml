@@ -1,0 +1,529 @@
+openapi: 3.0.0
+servers:
+  - url: https://api.example.com/v1
+    description: Production server (uses live data)
+info:
+  description: This is the API definition of the Obita Corebank Sandbox
+  version: '1.0.0'
+  title: Obita Corebank Sandbox API
+  contact:
+    email: support@obita.tech
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+paths:
+  /accounts:
+    get:
+      summary: Bank account
+      operationId: bankAccount
+      description: |
+        This path is related to the account details
+      parameters:
+        - in: query
+          name: searchString
+          description: pass an optional search string for looking up inventory
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: search results matching criteria
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Account'
+        '400':
+          description: bad input parameter
+    post:
+      summary: Create a bank account
+      operationId: createBankAccount
+      description: Create a bank account
+      responses:
+        '201':
+          description: Account created
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/AccountResponse'
+        '400':
+          description: 'invalid input, object invalid'
+        '409':
+          description: an existing account already exists
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Account'
+        description: Bank account to add
+  /accounts/{id}:
+    get:
+      summary: Get bank account by ID
+      operationId: bankAccountById
+      description: |
+        This path is related to the account details
+      parameters:
+        - in: path
+          name: id
+          description: account id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: details of the selected bank account
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Account'
+        '400':
+          description: bad account number
+  /accounts/{id}/transactions:
+    get:
+      summary: Get account transactions by ID
+      operationId: accountTransactionsById
+      description: |
+        This path is related to the account details
+      parameters:
+        - in: path
+          name: id
+          description: account id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: details of the transactions of the selected bank account
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Transaction'
+        '400':
+          description: bad account number
+  /accounts/{id}/standing-orders:
+    get:
+      summary: Get account standing orders by ID
+      operationId: accountStandingOrdersById
+      description: |
+        This path is related to the account details
+      parameters:
+        - in: path
+          name: id
+          description: account id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: details of the standing orders of the selected bank account
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Standing-Order'
+        '400':
+          description: bad account number
+  /accounts/{id}/scheduled-payments:
+    get:
+      summary: Get account scheduled payments by ID
+      operationId: accountScheduledPaymentsById
+      description: |
+        This path is related to the account details
+      parameters:
+        - in: path
+          name: id
+          description: account id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: details of the scheduled payments of the selected bank account
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Transaction'
+        '400':
+          description: bad account number
+  /accounts/{id}/direct-debits:
+    get:
+      summary: Get account direct debits by ID
+      operationId: accountDirectDebitsById
+      description: |
+        This path is related to the account details
+      parameters:
+        - in: path
+          name: id
+          description: account id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: details of the direct debits of the selected bank account
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Direct-Debits'
+        '400':
+          description: bad account number
+  /accounts/{id}/balance:
+    get:
+      summary: Get account balance by ID
+      operationId: accountBalanceById
+      description: |
+        This path is related to the account details
+      parameters:
+        - in: path
+          name: id
+          description: account id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: details of the balance of the selected bank account
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Balance'
+        '400':
+          description: bad account number
+  /accounts/{id}/beneficiaries:
+    get:
+      summary: Get account beneficiaries by ID
+      operationId: accountBeneficiariesById
+      description: |
+        This path is related to the account details
+      parameters:
+        - in: path
+          name: id
+          description: account id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: details of the beneficiaries of the selected bank account
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Beneficiary'
+        '400':
+          description: bad account number
+  /transactions:
+    post:
+      summary: Make a transaction
+      operationId: makeTransaction
+      description: Make a transaction
+      responses:
+        '201':
+          description: Transaction submitted
+        '400':
+          description: 'invalid input, object invalid'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Transaction'
+        description: Bank transaction submitted
+  /beneficiaries:
+    post:
+      summary: Create a beneficiary
+      operationId: createBeneficiary
+      description: Create a beneficiary
+      responses:
+        '201':
+          description: Beneficiary created
+        '400':
+          description: 'invalid input, object invalid'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Beneficiary'
+        description: Beneficiary created
+    delete:
+      summary: Delete a beneficiary
+      operationId: deleteBeneficiary
+      description: Delete a beneficiary
+      parameters:
+        - in: query
+          name: beneficiaryAccountNumber
+          description: beneficiary account number
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: linkedAccountNumber
+          description: linked account number
+          required: true
+          schema:
+            type: string
+      responses:
+        '201':
+          description: Beneficiary deleted
+        '400':
+          description: 'invalid input, object invalid'
+  /standing-orders:
+    post:
+      summary: Create a standing order
+      operationId: createStandingOrder
+      description: Create a standing order
+      responses:
+        '201':
+          description: Standing order created
+        '400':
+          description: 'invalid input, object invalid'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Standing-Order'
+        description: Standing order created
+  /scheduled-payments:
+    post:
+      summary: Create a scheduled payment
+      operationId: createScheduledPayment
+      description: Create a scheduled payment
+      responses:
+        '201':
+          description: Scheduled payment created
+        '400':
+          description: 'invalid input, object invalid'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Transaction'
+        description: Scheduled payment created
+  /direct-debits:
+    post:
+      summary: Create a direct debit
+      operationId: createDirectDebit
+      description: Create a direct debit
+      responses:
+        '201':
+          description: Direct debit created
+        '400':
+          description: 'invalid input, object invalid'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Direct-Debits'
+        description: Direct debit created
+  /balance:
+    put:
+      summary: Update the banalce
+      operationId: updateTheBalance
+      description: Update the banalce
+      responses:
+        '201':
+          description: Balance updated
+        '400':
+          description: 'invalid input, object invalid'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Balance'
+        description: Balance updated
+components:
+  schemas:
+    Account:
+      type: object
+      required:
+        - accountType
+        - accountHolderName
+        - accountHolderType
+        - balance
+        - country
+        - currency
+        - status
+        - startingDate
+        - IsDefaultAccount
+      properties:
+        accountType:
+          type: string
+          example: savings
+        accountHolderName:
+          type: string
+          example: Senara Perera
+        accountHolderType:
+          type: string
+          example: personal
+        balance:
+          type: number
+          example: 800.00
+        country:
+          type: string
+          example: US
+        currency:
+          type: string
+          example: usd
+        status:
+          type: string
+          example: new
+        startingDate:
+          type: string
+          example: '2023-03-31'
+        IsDefaultAccount:
+          type: string
+          example: 'true'
+    AccountResponse:
+      type: object
+      properties:
+        accountId:
+          type: string
+          example: '20814423-7950-4e8a-99b1-576afd667a49'
+        accountNumber:
+          type: string
+          example: US2383656218722200
+        message:
+          type: string
+          example: The account is successfully created
+    Transaction:
+      type: object
+      required:
+        - amount
+        - effectiveDate
+        - type
+        - description
+        - fromAccount
+        - toAccount
+        - status
+      properties:
+        amount:
+          type: number
+          example: 20.00
+        effectiveDate:
+          type: string
+          example: '2023-03-24'
+        type:
+          type: string
+          example: general
+        description:
+          type: string
+          example: Testing transaction
+        fromAccount:
+          type: string
+          example: US8342239339820919
+        toAccount:
+          type: string
+          example: US5017570594184887
+        status:
+          type: string
+          example: pending
+    Beneficiary:
+      type: object
+      required:
+        - beneficiaryName
+        - beneficiaryAccountNumber
+        - beneficiaryBankCode
+        - beneficiaryBankName
+        - beneficiaryPhone
+        - beneficiaryEmail
+        - linkedAccountNumber
+      properties:
+        beneficiaryName:
+          type: string
+          example: Prasad Srimal
+        beneficiaryAccountNumber:
+          type: string
+          example: US8342239339820919
+        beneficiaryBankCode:
+          type: string
+          example: PSWO2709
+        beneficiaryBankName:
+          type: string
+          example: NY Bank
+        beneficiaryPhone:
+          type: string
+          example: '+94712222112'
+        beneficiaryEmail:
+          type: string
+          example: prasad@email.com
+        linkedAccountNumber:
+          type: string
+          example: US5017570594184887
+    Standing-Order:
+      type: object
+      required:
+        - amount
+        - effectiveDate
+        - type
+        - description
+        - accountNumber
+      properties:
+        amount:
+          type: number
+          example: 12.00
+        effectiveDate:
+          type: string
+          example: '2023-03-13'
+        type:
+          type: string
+          example: general
+        description:
+          type: string
+          example: Testing standing order
+        accountNumber:
+          type: string
+          example: LK21PSWO27097242348445
+    Direct-Debits:
+      type: object
+      required:
+        - amount
+        - frequency
+        - lastPaymentDate
+        - payeeName
+        - accountNumber
+      properties:
+        amount:
+          type: number
+          example: 12.00
+        frequency:
+          type: string
+          example: weekly
+        lastPaymentDate:
+          type: string
+          example: '2023-03-13'
+        payeeName:
+          type: string
+          example: Prasad Srimal
+        accountNumber:
+          type: string
+          example: LK21PSWO27097242348445
+    Balance:
+      type: object
+      required:
+        - amount
+        - type
+        - accountNumber
+      properties:
+        amount:
+          type: number
+          example: 12.00
+        type:
+          type: string
+          example: credit
+        accountNumber:
+          type: string
+          example: LK21PSWO27097242348445
