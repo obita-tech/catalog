@@ -1,6 +1,6 @@
-# Deployment Guide: Sandbox Banking Solution
+# Deployment Guide: Corebank Sandbox Solution
 
-This deployment guide is designed to help customers deploy the Sandbox Banking solution in various environments. Our solution provides a comprehensive set of APIs and services to enable banks to extend their functionality and comply with Banking requirements. This document focuses on the deployment options available for the Sandbox Banking solution.
+This deployment guide is designed to help customers deploy the Corebank Sandbox solution in various environments. Our solution provides a comprehensive set of APIs and services to enable banks to extend their functionality and comply with Banking requirements. This document focuses on the deployment options available for the Corebank Sandbox solution.
 
 ## DeploymentArchitecture
 
@@ -10,11 +10,11 @@ This deployment guide is designed to help customers deploy the Sandbox Banking s
 
 ### Deploy on Kubernetes
 
-The Sandbox Banking solution can be deployed on the cloud Kubernetes infrastructure using Helm. This option provides more control and flexibility over the deployment environment. The process of the deployment on Kubernetes is as follows:
+The Corebank Sandbox solution can be deployed on the cloud Kubernetes infrastructure using Helm. This option provides more control and flexibility over the deployment environment. The process of the deployment on Kubernetes is as follows:
 
 - Install Kubernetes and Helm on your environment
 - Add the Obita Helm repository to your Helm installation
-- Install the Sandbox Banking solution using the provided Helm chart and configuration
+- Install the Corebank Sandbox solution using the provided Helm chart and configuration
 - Access the solution through the provided URL
 
 #### Steps to deploy

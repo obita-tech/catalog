@@ -1,14 +1,14 @@
-# Developer Guide: Obita Sandbox Banking
+# Developer Guide: Obita Corebank Sandbox
 
 ## Introduction
 
-This developer guide is designed to help developers understand and work with the mock banking solution. This solution consists of creating bank accounts, making transactions, adding and managing beneficiaries, managing funds, managing standing orders, manage direct debits and third parties. Users can check their transaction history and query through all the transactions.
+This developer guide is designed to help developers understand and work with the corebank sandbox solution. This solution consists of creating bank accounts, making transactions, adding and managing beneficiaries, managing funds, managing standing orders, manage direct debits and third parties. Users can check their transaction history and query through all the transactions.
 
 ## Solution Architecture
 
 ![solution architectur](./solutionArchitecture.png)
 
-The Sandbox Banking solution is built using the microservices architecture. The system comprises several independent services that communicate with each other using RESTful APIs.
+The Corebank Sandbox solution is built using the microservices architecture. The system comprises several independent services that communicate with each other using RESTful APIs.
 
 ## Getting Started
 
@@ -27,13 +27,13 @@ The backend is developed using Node.js and has three main components; the App, t
 - Clone the repository from GitHub
 
 ```bash
-git clone https://github.com/psrimaltv/obita-mockBanking-BE.git
+git clone https://github.com/psrimaltv/obita-corebank-sandbox-be.git
 ```
 
 - Go to the directory
 
 ```bash
-cd obita-mockBanking-BE
+cd obita-corebank-sandbox-be
 ```
 
 - Install dependencies
@@ -75,13 +75,13 @@ The front end is developed using React.js and has two main components; account m
 - Clone the repository from GitHub
 
 ```bash
-git clone https://github.com/psrimaltv/obita-mockbanking-fe.git
+git clone https://github.com/psrimaltv/obita-corebank-sandbox-fe.git
 ```
 
 - Go to the directory
 
 ```bash
-cd obita-mockbanking-fe
+cd obita-corebank-sandbox-fe
 ```
 
 - Install dependencies
@@ -112,11 +112,11 @@ This is the component to handle all the beneficiaries related tasks. Users can a
 
 ### API Documentation
 
-The API documentation provides a comprehensive reference for the Sandbox Banking APIs. The documentation includes the following: - API Reference - Authentication and Authorization - Data Formats - Error Handling
+The API documentation provides a comprehensive reference for the Corebank Sandbox APIs. The documentation includes the following: - API Reference - Authentication and Authorization - Data Formats - Error Handling
 
 ### Swagger UI [Link]
 
-The Sandbox Banking solution provides a Swagger UI to explore and interact with the APIs. The Swagger UI allows you to:
+The Corebank Sandbox solution provides a Swagger UI to explore and interact with the APIs. The Swagger UI allows you to:
 
     - View API endpoints and parameters
     - Try out API requests and see responses
@@ -124,14 +124,14 @@ The Sandbox Banking solution provides a Swagger UI to explore and interact with 
 
 ### Error Handling
 
-The Sandbox Banking solution provides comprehensive error handling to help developers diagnose and resolve issues. The error handling includes the following:
+The Corebank Sandbox solution provides comprehensive error handling to help developers diagnose and resolve issues. The error handling includes the following:
 
 Error Codes | Error Messages |
 Troubleshooting Guide
 
 ### Security
 
-Security is a critical aspect of Sandbox Banking solutions. Our solution provides the following security features:
+Security is a critical aspect of Corebank Sandbox solutions. Our solution provides the following security features:
 
 Strong Customer Authentication (SCA) |
 Client Authentication |
@@ -140,7 +140,7 @@ TLS Encryption
 
 ### Performance
 
-The Sandbox Banking solution is designed to perform under high loads. We use the following techniques to optimize performance:
+The Corebank Sandbox solution is designed to perform under high loads. We use the following techniques to optimize performance:
 
 Caching |
 Asynchronous Processing |
@@ -148,10 +148,10 @@ Distributed Architecture
 
 ### Integration
 
-The Sandbox Banking solution is designed to integrate with third-party systems. We provide the following integration features:
+The Corebank Sandbox solution is designed to integrate with third-party systems. We provide the following integration features:
 
 API Management
 
 ### Support
 
-If you encounter issues or have questions while working with the Sandbox Banking solution, please contact our support team at `support@obita.tech`.
+If you encounter issues or have questions while working with the Corebank Sandbox solution, please contact our support team at `support@obita.tech`.

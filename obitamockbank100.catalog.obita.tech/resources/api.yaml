@@ -3,9 +3,9 @@ servers:
   - url: https://api.example.com/v1
     description: Production server (uses live data)
 info:
-  description: This is the API definition of the Obita Mock Banking
+  description: This is the API definition of the Obita Corebank Sandbox
   version: '1.0.0'
-  title: Obita Mock Banking API
+  title: Obita Corebank Sandbox API
   contact:
     email: support@obita.tech
   license:
