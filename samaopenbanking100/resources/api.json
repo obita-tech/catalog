@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "Sama Account and Transaction API Specification",
+    "title": "SAMA Account and Transaction API Specification",
     "description": "Swagger for Account and Transaction API Specification derived from Open Banking UK Specification",
     "termsOfService": "https://www.openbanking.org.uk/terms",
     "contact": {
