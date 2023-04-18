@@ -1,9 +1,17 @@
 
 # Introduction 
  
-Open Banking was first introduced to the world in Europe, primarily driven by the market regulation PSD2. In parallel, the Open Banking Implementation Entity (OBIE) was established in the UK, which set the Open Banking standard(s) for the country. This standard has since become the foundation upon which other jurisdictions have developed their own Open Banking frameworks.
+API Profile: UK Account and Transaction API Profile - v3.1.10
 
-On November 2nd, 2022, the Saudi Central Bank (SAMA) announced the release of the Open Banking Framework, a comprehensive set of legislation, regulatory guidelines, and technical standards based on international best practices. This framework is designed to facilitate open banking services for banks and fintechs in Saudi Arabia, with a focus on Account Information Services (AIS) in its first version. The imminent second version is currently in progress and will prioritize Payment Initiation Services (PIS). SAMA has set a timeline for all Saudi banks to go live with account data in the first quarter of 2023, with payment services targeted for later in the same year.
+Release Date: October 1st, 2022
+
+Description: On October 1st, 2022, the UK's Open Banking Implementation Entity (OBIE) announced the release of the UK Account and Transaction API Profile - v3.1.10. This profile is designed to provide a standardized way for banks and financial institutions to offer open banking services, such as Account Information Services (AIS) and Payment Initiation Services (PIS).
+
+The API profile is based on international best practices and is designed to ensure interoperability between different banks and financial institutions. It includes technical standards, guidelines, and specifications to ensure consistency and security in the exchange of data between parties.
+
+All UK banks are required to implement the UK Account and Transaction API Profile - v3.1.10 as part of their compliance with the Payment Services Regulations 2017 (PSR). The PSR sets a timeline for all UK banks to go live with account data and payment services by March 31st, 2023.
+
+This profile is expected to drive innovation and competition in the financial services industry, providing consumers with greater control over their financial data and enabling them to access a wider range of financial services.
 
 
 # Ecosystem & participants
@@ -38,4 +46,4 @@ The API for Account Information is fundamental to collecting AIS information fro
 | /sheduled-payments  | A list of future payments scheduled to be made to beneficiaries associated with the account. |
 
 # User Journey
-![user journey](./userJourney.png)
+![user journey](userJourney.png)
