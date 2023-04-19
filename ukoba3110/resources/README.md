@@ -52,7 +52,7 @@ Will be available in the GA release
 Will be available in the next GA release
 
 # AISP User Journey
-![user journey](userJourney.png)
+![user journey](https://raw.githubusercontent.com/obita-tech/catalog/master/ukoba3110/resources/userJourney.png)
 
 # PISP User Journey
 Will be available in the next GA release

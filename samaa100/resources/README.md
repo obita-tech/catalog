@@ -37,5 +37,11 @@ The API for Account Information is fundamental to collecting AIS information fro
 | /direct-debits      | A list of direct debit payments set up against a selected account. |
 | /sheduled-payments  | A list of future payments scheduled to be made to beneficiaries associated with the account. |
 
-# User Journey
+# AISP User Journey 
 ![user journey](./userJourney.png)
+
+# PISP User Journey 
+Will available in the next release
+
+# COF User Journey 
+Will available in the next release
