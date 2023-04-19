@@ -38,7 +38,7 @@ The API for Account Information is fundamental to collecting AIS information fro
 | /sheduled-payments  | A list of future payments scheduled to be made to beneficiaries associated with the account. |
 
 # AISP User Journey 
-![user journey](./userJourney.png)
+![user journey](https://raw.githubusercontent.com/obita-tech/catalog/master/samaa100/resources/userJourney.png)
 
 # PISP User Journey 
 Will available in the next release

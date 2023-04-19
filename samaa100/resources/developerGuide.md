@@ -1,86 +1,39 @@
 # Developer Guide: SAMA Open Banking Solution
 
 ## Introduction
-This developer guide is designed to help developers understand and work with our Open Banking solution. Our solution provides a comprehensive set of APIs and services to enable banks to extend their functionality and comply with Open Banking requirements. This document focuses on the development work around Open Banking requirements, extending the functionality like Dynamic Client Registration, Consent Management, Strong customer authentication, Client Authentication, API Management, Integration & Analytics.
+This developer guide is designed to help developers understand and work with UK Open Banking solution offered by Obita. Our solution provides a comprehensive set of APIs and services to enable banks to comply with Open Banking requirements.
+The inncubator functionaity in Obita Marketplace provids a fully working setup which intgrates with a sandbox core banking service. You can use it to quick setup and evaluate the product. Please refer to the deployment guide section to understand how to use the incubator.
 
 ## Solution Architecture
-![solution architectur](./solutionArchitecture.png)
+![solution architecture](https://raw.githubusercontent.com/obita-tech/catalog/master/samaa100/resources/solutionArchitecture.png)
 
- Open Banking solution is built using a microservices architecture. The system is composed of several independent services that communicate with each other using RESTful APIs.
+ Open Banking solution is built by combining a set of Saas products each of which is providing independent services that communicate with each other using RESTful APIs to achive the open banking functionality.
 
-## Getting Started
-### System Requirements
-To work with our Open Banking solution, you will need the following:
-
-A computer with a modern web browser
-An IDE, such as Visual Studio Code
-Docker and Docker Compose installed
-
-### Setup
-- Clone the repository from GitHub
-- Install Docker and Docker Compose
-- Run docker-compose up to start the system
-- Open the Swagger UI to explore the APIs
-  
-### API Documentation
-   The API documentation provides a comprehensive reference for our Open Banking APIs. The documentation includes the following:
-    - API Reference
-    - Authentication and Authorization
-    - Data Formats
-    - Error Handling
-  
-### Swagger UI [Link]
-
-Our Open Banking solution provides a Swagger UI to explore and interact with the APIs. The Swagger UI allows you to:
-
-    - View API endpoints and parameters
-    - Try out API requests and see responses
-    - Generate client code in multiple programming languages
-
-### Development
-
-#### Extend GW
-#### Extend IAM
-#### Extend OCM
-#### Extend DCR Interface
-#### Extend BI
+| Service                 | Options            |  Functionality                        |
+|-------------------------|--------------------|---------------------------------------|
+|  Consent Management     | OCM                | Consent Lifecycle Management          |
+|  API Management         | Azure, Choreo      | API Lifecycle Management              |
+|  Identity & Access      | Asgardeo, wso2 IAM | SCA, OAuth2 OIDC, Identity Federation |
 
 
-### Error Handling
-Our Open Banking solution provides comprehensive error handling to help developers diagnose and resolve issues. The error handling includes the following:
+## Create Dev Environment
+You can create a fully working dev environment within few clicks that will deploys the solution in a obita managed environment called "Incubator". Please refer to the deployment guide for further information.
+With that, you can play with the open banking APIs. All the requied test scrips are available for dowload in artifacts.
 
-Error Codes |Error Messages
-Troubleshooting Guide
+## Connect with the back end
+By default, the solution deployed in the incubator connects to a Sandbox Core Banking service available as a part of the solution. The integrations are written using [ballerina](https://ballerina.io/) and Go languages. If connect to your own sandbox, you can replace the  
 
-### Security
-Security is a critical aspect of Open Banking solutions. Our solution provides the following security features:
+## Write your Ballerina Integration
 
-Strong Customer Authentication (SCA)
-Client Authentication
-OAuth2 Authorization Framework
-TLS Encryption
 
-### Performance
-Our Open Banking solution is designed to perform under high loads. We use the following techniques to optimize performance:
+## Write your GO Integration
 
-Caching
-Asynchronous Processing
-Distributed Architecture
 
-### Integration
-Our Open Banking solution is designed to integrate with third-party systems. We provide the following integration features:
+## Deploy in the incubator
+1. Create a Docker Image out of your integration
+2. Push it to your registry
+3. Login to the portal and re-configure the integration to pickup the image from new location
+4. Redeploy the solution 
 
-API Management
-Integration Adapters
-Webhooks
-
-### Analytics
-Our Open Banking solution provides comprehensive analytics to help banks understand how their customers are using the system. The analytics include the following:
-
-Usage Metrics
-Transaction Analytics
-Business Intelligence
-
-### Support
-If you encounter issues or have questions while working with our Open Banking solution, please reach out to our support team at `support@obita.tech`.
-
+## Further customize the solution
+If you want to customize the solution to bring your own features or need to setup the entiresolution in your own environment, please contact `support.obita.com` for assistance.

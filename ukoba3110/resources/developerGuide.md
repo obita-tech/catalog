@@ -1,4 +1,4 @@
-# Developer Guide: SAMA Open Banking Solution
+# Developer Guide: UK Open Banking Solution
 
 ## Introduction
 This developer guide is designed to help developers understand and work with UK Open Banking solution offered by Obita. Our solution provides a comprehensive set of APIs and services to enable banks to comply with Open Banking requirements.

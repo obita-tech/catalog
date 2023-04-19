@@ -1,4 +1,4 @@
-git# Deployment Guide: Open Banking Solution
+# Deployment Guide: UK Open Banking Solution
 This deployment guide is designed to help developers deploy the Open Banking solution in various environments. Our solution provides a comprehensive set of APIs and services to enable banks to extend their functionality and comply with Open Banking requirements. This document focuses on the deployment options available for the Open Banking solution.
 
 ## DeploymentArchitecture
@@ -29,5 +29,5 @@ Will be avilable in GA release
 Will be avilable in GA release
 
 
-Note: If you want to deploy the solution on-prem, please contact the support team via support.obita.com
+Note: If you want to deploy the solution on-prem, please contact the support team via `support.obita.com`
 
