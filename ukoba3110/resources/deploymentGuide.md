@@ -1,42 +1,33 @@
 # Deployment Guide: Open Banking Solution
-This deployment guide is designed to help customers deploy our Open Banking solution in various environments. Our solution provides a comprehensive set of APIs and services to enable banks to extend their functionality and comply with Open Banking requirements. This document focuses on the deployment options available for the Open Banking solution.
+This deployment guide is designed to help developers deploy the Open Banking solution in various environments. Our solution provides a comprehensive set of APIs and services to enable banks to extend their functionality and comply with Open Banking requirements. This document focuses on the deployment options available for the Open Banking solution.
 
 ## DeploymentArchitecture
-![Deployment Architecture](deploymentArchitecture.png)
+![Deployment Architecture](https://github.com/obita-tech/catalog/blob/master/ukoba3110/resources/deploymentArchitecture.png)
 
-## Deployment Options
-
-### Deploy on Obita Incubator
+## Deploy on Obita Incubator
 Our Open Banking solution can be deployed on the Obita Incubator, which is a complete solution deployed on an incubator environment managed by Obita. This option is ideal for evaluation purposes and provides an easy way to get started with our solution. The steps to deploy on the Obita Incubator are as follows:
 
-- Create an account on the Obita  website
-- Follow the instructions to create a new project and deploy the Open Banking solution
-- Access the solution through the provided URL
-
-### Deploy on Kubernetes
-Our Open Banking solution can be deployed on a native or cloud Kubernetes infrastructure using Helm. This option provides more control and flexibility over the deployment environment. The steps to deploy on Kubernetes are as follows:
-
-- Install Kubernetes and Helm on your environment
-- Add the Obita Helm repository to your Helm installation
-- Install the Open Banking solution using the provided Helm chart and configuration
-- Access the solution through the provided URL
+- Create an account on the Obita  website providing the information provided on the signup page.
+- Login to Obita and visit [marketplace](https://www.obita.tech/app/marketplace)
+- Search for the solution and click on deploy this to incubator button.
+  At this step you will be redirected to the portal [portal](https://www.obita.tech/app/portal) where you need to select the project that you want to subscribe this solution to. By default, a default peroject is selected or if you want you can a create a new project on the portal. Select the project and subscribe.
+- Click on deploy button
+  At this step, the deployment to the incubator is initated. once the deployment is ready you will be able to see the URLs of your APIs on the portal.
+- Use testscripts provided in the artifacts section to test the fucntionality of the APIs.
   
-### Deploy on Obita SaaS Cloud
-Our Open Banking solution can be deployed on the Obita SaaS Cloud, which is a Kubernetes platform managed by Obita. This option is ideal for customers who require a SaaS deployment and want the benefits of a managed environment. The steps to deploy on the Obita SaaS Cloud are as follows:
 
-- Create an account on the Obita  website
-- Follow the instructions to create a new project and deploy the Open Banking solution
-- Access the solution through the provided URL
-
-### Deploy on Private Data Plane
-Our Open Banking solution can be deployed on a customer-managed Kubernetes infrastructure using the Obita Data Plane. This option is ideal for customers who require full control over their deployment environment and want to run the solution on their own infrastructure. The Obita Data Plane is currently supported only on Azure and AWS. The steps to deploy on a private data plane are as follows:
-
-- Create a new Kubernetes cluster on your chosen cloud provider
-- Install the Obita Data Plane on the cluster
-- Install the Open Banking solution using the provided Helm chart and configuration
-- Access the solution through the provided URL
+## Production Deployment Options
+Following are the deployement options available
+1. Deploy on Obita Managed Environment on Azure
+2. Deploy on your own kubernates cluster on Azure
 
 
+### Deploy on Obita 
+Will be avilable in GA release
+
+### Deploy on private kubernates cluster 
+Will be avilable in GA release
 
 
+Note: If you want to deploy the solution on-prem, please contact the support team via support.obita.com
 
