@@ -36,4 +36,4 @@ By default, the solution deployed in the incubator connects to a Sandbox Core Ba
 4. Redeploy the solution 
 
 ## Further customize the solution
-If you want to customize the solution to bring your own features or need to setup the entiresolution in your own environment, please contact support.obita.com for assistance.
+If you want to customize the solution to bring your own features or need to setup the entiresolution in your own environment, please contact `support@obita.com` for assistance.

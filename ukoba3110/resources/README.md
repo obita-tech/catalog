@@ -32,10 +32,11 @@ This profile is expected to drive innovation and competition in the financial se
 
 ## Accounts Information API
 
-The API for Account Information is fundamental to collecting AIS information from accounts. It includes consents and requests to access information contained in the following endpoints.
+The API for Account Information is fundamental to collecting AIS information from accounts. It includes consents and requests to access information contained in the following resources.
 
 | Resource            | Description        | 
 |---------------------|--------------------|
+| /account-access-consents | Consent CRUD operations |
 | /accounts           | This is a list of accounts that the PSU has given consent to access. |
 | /balances           | The current balance(s) of a selected account. | 
 | /standing-orders    | A list of recurring payments that have been set up for a specified account. | 
@@ -45,17 +46,5 @@ The API for Account Information is fundamental to collecting AIS information fro
 | /direct-debits      | A list of direct debit payments set up against a selected account. |
 | /sheduled-payments  | A list of future payments scheduled to be made to beneficiaries associated with the account. |
 
-## Payment API
-Will be available in the GA release
-
-## CoF API
-Will be available in the next GA release
-
 # AISP User Journey
 ![user journey](https://raw.githubusercontent.com/obita-tech/catalog/master/ukoba3110/resources/userJourney.png)
-
-# PISP User Journey
-Will be available in the next GA release
-
-# COF User Journey
-Will be available in the next GA release

@@ -28,6 +28,7 @@ The API for Account Information is fundamental to collecting AIS information fro
 
 | Resource            | Description        | 
 |---------------------|--------------------|
+| /account-access-consents | Consent CRUD operations |
 | /accounts           | This is a list of accounts that the PSU has given consent to access. |
 | /balances           | The current balance(s) of a selected account. | 
 | /standing-orders    | A list of recurring payments that have been set up for a specified account. | 
@@ -40,8 +41,3 @@ The API for Account Information is fundamental to collecting AIS information fro
 # AISP User Journey 
 ![user journey](https://raw.githubusercontent.com/obita-tech/catalog/master/samaa100/resources/userJourney.png)
 
-# PISP User Journey 
-Will available in the next release
-
-# COF User Journey 
-Will available in the next release
