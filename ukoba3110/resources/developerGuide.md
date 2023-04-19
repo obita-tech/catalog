@@ -33,7 +33,7 @@ By default, the solution deployed in the incubator connects to a Sandbox Core Ba
 1. Create a Docker Image out of your integration
 2. Push it to your registry
 3. Login to the portal and re-configure the integration to pickup the image from new location
-4. Redeplot the solution 
+4. Redeploy the solution 
 
 ## Further customize the solution
 If you want to customize the solution to bring your own features or need to setup the entiresolution in your own environment, please contact support.obita.com for assistance.
