@@ -4,7 +4,7 @@
 This developer guide is designed to help developers understand and work with our Open Banking solution. Our solution provides a comprehensive set of APIs and services to enable banks to extend their functionality and comply with Open Banking requirements. This document focuses on the development work around Open Banking requirements, extending the functionality like Dynamic Client Registration, Consent Management, Strong customer authentication, Client Authentication, API Management, Integration & Analytics.
 
 ## Solution Architecture
-![solution architectur](https://github.com/obita-tech/catalog/blob/master/ukoba3110/resources/solutionArchitecture.png)
+![solution architecture](https://raw.githubusercontent.com/obita-tech/catalog/master/ukoba3110/resources/solutionArchitecture.png)
 
  Open Banking solution is built using a microservices architecture. The system is composed of several independent services that communicate with each other using RESTful APIs.
 
