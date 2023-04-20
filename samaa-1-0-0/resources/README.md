@@ -8,18 +8,52 @@ On November 2nd, 2022, the Saudi Central Bank (SAMA) announced the release of th
 
 # Ecosystem & participants
 
-| Term | Description |
-|-----------------------------------|--|
-| Account to Account transfer (A2A) | Payment made through a bank-to-bank transfer, instead of using credit or debit cards. |
-| Account Information Service (AIS) | Retrieval of data held in a customer’s bank account. |
-| Account Information Service Provider (AISP) | Enables customers to view all their bank account information (across different banks) in one place. |
-| Consent | Approval given by a PSU to allow a TPP to access the details in their account. |
-| Payment Account Service Provider (PASP) | Provider of the underlying account infrastructure, which is accessed through Open Banking APIs. |
-| Payment Initiation Service (PIS) | Act of performing an account-to-account payment using Open Banking. |
-| Payment Initiation Service Provider (PISP) | Allows a customer to pay companies directly from their bank account(s), rather than using card networks. |
-| Payment Service User (PSU) | Customer or end-user of a service. |
-| Third-Party Provider (TPP) | Provider of AIS and/or PIS services to a PSU. |
-| Variable Recurring Payment (VRP) | Long-lived consent from a customer to continue making payments on a monthly basis for differing amounts. |
+<table>
+  <tr>
+    <th>Term</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Account to Account transfer (A2A)</td>
+    <td>Payment made through a bank-to-bank transfer, instead of using credit or debit cards.</td>
+  </tr>
+  <tr>
+    <td>Account Information Service (AIS)</td>
+    <td>Retrieval of data held in a customer’s bank account.</td>
+  </tr>
+  <tr>
+    <td>Account Information Service Provider (AISP)</td>
+    <td>Enables customers to view all their bank account information (across different banks) in one place.</td>
+  </tr>
+  <tr>
+    <td>Consent</td>
+    <td>Approval given by a PSU to allow a TPP to access the details in their account.</td>
+  </tr>
+  <tr>
+    <td>Payment Account Service Provider (PASP)</td>
+    <td>Provider of the underlying account infrastructure, which is accessed through Open Banking APIs.</td>
+  </tr>
+  <tr>
+    <td>Payment Initiation Service (PIS)</td>
+    <td>Act of performing an account-to-account payment using Open Banking.</td>
+  </tr>
+  <tr>
+    <td>Payment Initiation Service Provider (PISP)</td>
+    <td>Allows a customer to pay companies directly from their bank account(s), rather than using card networks.</td>
+  </tr>
+  <tr>
+    <td>Payment Service User (PSU)</td>
+    <td>Customer or end-user of a service.</td>
+  </tr>
+  <tr>
+    <td>Third-Party Provider (TPP)</td>
+    <td>Provider of AIS and/or PIS services to a PSU.</td>
+  </tr>
+  <tr>
+    <td>Variable Recurring Payment (VRP)</td>
+    <td>Long-lived consent from a customer to continue making payments on a monthly basis for differing amounts.</td>
+  </tr>
+</table>
 
 
 ## Accounts Information API
