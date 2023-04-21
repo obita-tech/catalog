@@ -2,7 +2,7 @@
 This deployment guide is designed to help developers deploy the Open Banking solution in various environments. Our solution provides a comprehensive set of APIs and services to enable banks to extend their functionality and comply with Open Banking requirements. This document focuses on the deployment options available for the Open Banking solution.
 
 ## DeploymentArchitecture
-![Deployment Architecture](https://github.com/obita-tech/catalog/blob/master/ukoba3110/resources/deploymentArchitecture.png)
+![Deployment Architecture](https://github.com/obita-tech/catalog/blob/master/ukoba-3-1-10/resources/deploymentArchitecture.png)
 
 ## Deploy on Obita Incubator
 Our Open Banking solution can be deployed on the Obita Incubator, which is a complete solution deployed on an incubator environment managed by Obita. This option is ideal for evaluation purposes and provides an easy way to get started with our solution. The steps to deploy on the Obita Incubator are as follows:
