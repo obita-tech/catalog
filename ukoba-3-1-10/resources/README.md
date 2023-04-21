@@ -47,4 +47,4 @@ The API for Account Information is fundamental to collecting AIS information fro
 | /sheduled-payments  | A list of future payments scheduled to be made to beneficiaries associated with the account. |
 
 # AISP User Journey
-![user journey](https://raw.githubusercontent.com/obita-tech/catalog/master/ukoba3110/resources/userJourney.png)
+![user journey](https://raw.githubusercontent.com/obita-tech/catalog/master/ukoba-3-1-10/resources/userJourney.png)
