@@ -5,7 +5,7 @@ This developer guide is designed to help developers understand and work with Nex
 The inncubator functionaity in Obita Marketplace provids a fully working setup which intgrates with a sandbox core banking service. You can use it to quick setup and evaluate the product. Please refer to the deployment guide section to understand how to use the incubator.
 
 ## Solution Architecture
-![solution architecture](https://raw.githubusercontent.com/obita-tech/catalog/master/ngpsd2oba1312/resources/solutionArchitecture.png)
+![solution architecture](https://raw.githubusercontent.com/obita-tech/catalog/master/ngpsd2-1-3-12/resources/solutionArchitecture.png)
 
  Open Banking solution is built by combining a set of Saas products each of which is providing independent services that communicate with each other using RESTful APIs to achive the open banking functionality.
 
