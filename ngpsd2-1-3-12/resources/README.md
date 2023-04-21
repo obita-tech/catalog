@@ -38,4 +38,4 @@ The API for Account Information is fundamental to collecting AIS information fro
 
 
 # AISP User Journey 
-![user journey](https://raw.githubusercontent.com/obita-tech/catalog/master/ngpsd2oba1312/resources/userJourney.png)
+![user journey](https://raw.githubusercontent.com/obita-tech/catalog/master/ngpsd2oba-1-3-12/resources/userJourney.png)
