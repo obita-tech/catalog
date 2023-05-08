@@ -1,4 +1,4 @@
-# Developer Guide: SAMA Open Banking Solution
+# Developer Guide: NextGenPSD2 Open Banking Solution
 
 ## Introduction
 This developer guide is designed to help developers understand and work with NextGenPSD2 Open Banking solution offered by Obita. Our solution provides a comprehensive set of APIs and services to enable banks to comply with Open Banking requirements.
