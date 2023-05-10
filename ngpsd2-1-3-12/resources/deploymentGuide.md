@@ -1,4 +1,4 @@
-# Deployment Guide: SAMA Open Banking Solution
+# Deployment Guide: NextGenPSD2 Open Banking Solution
 This deployment guide is designed to help developers deploy the Open Banking solution in various environments. Our solution provides a comprehensive set of APIs and services to enable banks to extend their functionality and comply with Open Banking requirements. This document focuses on the deployment options available for the Open Banking solution.
 
 ## DeploymentArchitecture
