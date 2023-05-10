@@ -2,7 +2,7 @@
 This deployment guide is designed to help developers deploy the Open Banking solution in various environments. Our solution provides a comprehensive set of APIs and services to enable banks to extend their functionality and comply with Open Banking requirements. This document focuses on the deployment options available for the Open Banking solution.
 
 ## DeploymentArchitecture
-![Deployment Architecture](https://raw.githubusercontent.com/obita-tech/catalog/master/ngpsd2-1-3-12/resources/deploymetArchitecture.png)
+![Deployment Architecture](https://raw.githubusercontent.com/obita-tech/catalog/master/ngpsd2-1-3-12/resources/deploymentArchitecture.png)
 
 
 ## Deploy on Obita Incubator
