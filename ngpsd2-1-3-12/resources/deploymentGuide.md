@@ -9,9 +9,9 @@ This deployment guide is designed to help developers deploy the Open Banking sol
 Our Open Banking solution can be deployed on the Obita Incubator, which is a complete solution deployed on an incubator environment managed by Obita. This option is ideal for evaluation purposes and provides an easy way to get started with our solution. The steps to deploy on the Obita Incubator are as follows:
 
 - Create an account on the Obita  website providing the information provided on the signup page.
-- Login to Obita and visit [marketplace](https://www.obita.tech/app/marketplace)
+- Login to Obita and visit [marketplace](https://portal.obita.tech/app/marketplace)
 - Search for the solution and click on deploy this to incubator button.
-  At this step you will be redirected to the portal [portal](https://www.obita.tech/app/portal) where you need to select the project that you want to subscribe this solution to. By default, a default peroject is selected or if you want you can a create a new project on the portal. Select the project and subscribe.
+  At this step you will be redirected to the portal [portal](https://portal.obita.tech/dashboard) where you need to select the project that you want to subscribe this solution to. By default, a default peroject is selected or if you want you can a create a new project on the portal. Select the project and subscribe.
 - Click on deploy button
   At this step, the deployment to the incubator is initated. once the deployment is ready you will be able to see the URLs of your APIs on the portal.
 - Use testscripts provided in the artifacts section to test the fucntionality of the APIs.
