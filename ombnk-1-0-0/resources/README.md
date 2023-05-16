@@ -14,8 +14,4 @@ Beneficiary management allows users to add and delete their account beneficiarie
 
 All the users who are willing to try out our Open Banking solutions can participate in the Corebank Sandbox system.
 
-
-
-
-
 ## Use Cases
